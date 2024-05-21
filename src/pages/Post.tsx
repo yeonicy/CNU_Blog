@@ -60,8 +60,53 @@ const Text = styled.p`
 `;
 
 const Post = () => {
+  const params = useParams();
+  const { postId = '' } = params;
+  const [post, setPost] = useState<IPost | null>(null);
+
+  const fetchPostById = async (id: string) => {
+    const { data } = await getPostById(id);
+    setPost(data);
+  };
+
+  useEffect(() => {
+    if (postId) {
+      fetchPostById(postId);
+    }
+  }, []);
+
+  if (!post) {
+    return <NotFound />;
+  }
+
   // todo (4) post 컴포넌트 작성
-  return <div style={{ margin: '5.5rem auto', width: '700px' }}></div>;
+  return (
+    <div style={{ margin: '5.5rem auto', width: '700px' }}>
+      <div>
+        <Title>{post.title}</Title>
+        <Toolbar>
+          <Info>
+            <div>n분전</div>
+          </Info>
+          <div>
+            {/*todo 수정/삭제 버튼 작성*/}
+            <TextButton>수정</TextButton>
+            <TextButton>삭제</TextButton>
+          </div>
+        </Toolbar>
+        {post?.tag && (
+          <TagWrapper>
+            <Tag>#{post.tag}</Tag>
+          </TagWrapper>
+        )}
+      </div>
+      <ContentsArea>
+        {post.contents.split('\n').map((text, index) => (
+          <Text key={index}>{text}</Text>
+        ))}
+      </ContentsArea>
+    </div>
+  );
 };
 
 export default Post;
