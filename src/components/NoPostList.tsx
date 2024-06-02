@@ -2,12 +2,12 @@ import NOTHING_HERE_IMG from '../assets/NOTHING_HERE.jpg';
 import styled from '@emotion/styled';
 
 const Wrapper = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 `;
 
 const NoPostList = () => {

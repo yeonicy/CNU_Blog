@@ -24,12 +24,16 @@ const Contents = styled.p`
 
 const PostListItem = (props: IPost) => {
   const { id, title, contents, tag } = props;
+
   return (
-    <ItemLink to={`/posts/${id}`}>
-      <h2>{title}</h2>
-      <Contents>{contents}</Contents>
-      <Tag>#{tag}</Tag>
-    </ItemLink>
+    <div>
+      <ItemLink to={`/post/${id}`}>
+        <h2>{title}</h2>
+        <Contents>{contents}</Contents>
+        <Tag>#{tag}</Tag>
+      </ItemLink>
+      {/*todo (3-2) 게시글 목록 아이템 작성*/}
+    </div>
   );
 };
 
