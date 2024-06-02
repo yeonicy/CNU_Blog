@@ -11,10 +11,10 @@ const Resume = () => {
       }}
     >
       <header style={{ textAlign: 'center', borderBottom: '2px solid #eee', paddingBottom: '10px', marginBottom: '20px' }}>
-        <h1 style={{ margin: '0', fontSize: '2em' }}>DoHyeon KIM</h1>
+        <h1 style={{ margin: '0', fontSize: '2em' }}>Chaeyeon Park</h1>
         <p style={{ margin: '5px 0' }}>11-29 Yuseong-daero, Daejeon, Kore</p>
-        <p style={{ margin: '5px 0' }}>+82-10-2780-3277</p>
-        <p style={{ margin: '5px 0' }}>gdb1520@gmail.com</p>
+        <p style={{ margin: '5px 0' }}>+82-10-2749-0451</p>
+        <p style={{ margin: '5px 0' }}>yeonicy03@gmail.com</p>
         <p style={{ margin: '5px 0' }}>
           <a style={{ color: '#0073e6', textDecoration: 'none' }} href="https://github.com/dohyeon321">
             https://github.com/dohyeon321
@@ -56,12 +56,13 @@ const Resume = () => {
           </ul>
         </div>
         <div>
-          <h3 style={{ marginTop: '10px', color: '#555' }}>Java Mentor, School Club, March - May 2023</h3>
+          <h3 style={{ marginTop: '10px', color: '#555' }}>Project in the Fundamentals of Project Management course, March –
+            May 2023 </h3>
           <ul style={{ listStyleType: 'disc', marginLeft: '20px' }}>
-            <li>Led introductory Java training sessions for freshmen, focusing on fundamental concepts.</li>
-            <li>Fostered teamwork among students to cultivate a supportive learning environment.</li>
+            <li>Developed a project as a team</li>
+            <li>Studied Database and UI.</li>
             <li>
-              Delivered individualized support to students, providing personalized assistance tailored to their specific learning needs and
+              Developed UI using Flutter and utilized Firebase for data management.Delivered individualized support to students, providing personalized assistance tailored to their specific learning needs and
               challenges.
             </li>
           </ul>

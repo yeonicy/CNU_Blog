@@ -66,8 +66,8 @@ const Layout = () => {
           />
         </div>
         <div>
-          <Name>도현</Name>
-          <Description>안녕</Description>
+          <Name>채연</Name>
+          <Description>반가워요</Description>
         </div>
       </Profile>
       <Nav>
